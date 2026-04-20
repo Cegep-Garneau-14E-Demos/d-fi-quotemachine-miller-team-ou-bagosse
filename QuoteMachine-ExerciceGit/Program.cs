@@ -7,9 +7,28 @@ Console.WriteLine("Prochaines étapes : implémentez les fonctionnalités dans d
 Console.WriteLine("\n=== Menu Principal ===");
 Console.WriteLine("Ajouter une nouvelle quote (A)   Quote random (R)   sauvegarder les quotes (S)   Charger citations (C)");
 
+
 Console.ReadKey(true);
 var manager = new QuoteManager();
 string path = "citations.csv";
+string choix = Console.ReadLine();
+switch (choix)
+{
+    case "A":
+        AddNewQuote(manager);
+        break;
+    case "R":
+        ShowRandomQuote(manager);
+        break;
+    case "S":
+        SaveQuotesToFile(manager);
+        break;
+    case "C":
+        LoadQuotesFromFile(manager);
+        break;
+}
+
+
 
 static void ShowRandomQuote(QuoteManager manager)
 {
