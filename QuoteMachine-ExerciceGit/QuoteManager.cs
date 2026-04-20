@@ -22,11 +22,11 @@ namespace QuoteMachine_ExerciceGit
 
         public Quote GetRandomQuote()
         {
-            //Avant de commencer, décommenter le test suivant:
-            //GetRandomQuote_ShouldReturnNonNullQuote
+            //Avant de commencer, décommenter le test suivant DANS LE FICHIER QUOTEMANAGER:
+            // GetRandomQuote_ShouldReturnNonNullQuote;
 
             //Avant de créer votre PR, faites un git rebase sur main pour vous assurer que vous avez la dernière version du code.
-            throw new NotImplementedException("À implémenter dans feature/random-quote");
+            return new Quote { Text = "Plus tu chug dla biere, moin ke tarive a aicrire.."};
         }
 
         public void AddQuote(string text, string author)
