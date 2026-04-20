@@ -18,14 +18,12 @@ static void ShowRandomQuote(QuoteManager manager)
 
 static void AddNewQuote(QuoteManager manager)
 {
-    Console.WriteLine("[Simulation] On ajouterait une nouvelle citation ici.");
-    // Exemple futur :
-    // Console.Write("Texte : ");
-    // var texte = Console.ReadLine();
-    // Console.Write("Auteur : ");
-    // var auteur = Console.ReadLine();
-    // manager.AddQuote(texte, auteur);
-    // Console.WriteLine("Citation ajoutée !");
+    Console.WriteLine("Ajouter une nouvelle citation ici.");
+     string citation = Console.ReadLine();
+     Console.Write("Auteur : ");
+     string auteur = Console.ReadLine();
+     manager.AddQuote(citation, auteur);
+     Console.WriteLine("Citation ajoutée !");
 }
 
 static void SaveQuotesToFile(QuoteManager manager)
