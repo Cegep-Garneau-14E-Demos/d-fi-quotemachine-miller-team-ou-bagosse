@@ -11,7 +11,9 @@ Console.WriteLine("Ajouter une nouvelle quote (A)   Quote random (R)   sauvegard
 Console.ReadKey(true);
 var manager = new QuoteManager();
 string path = "citations.csv";
-string choix = Console.ReadLine();
+string choix = Console.ReadLine().ToUpper();
+if (choix.Length > 1)
+    Console.WriteLine("vous devez avoir un seul charactère");
 switch (choix)
 {
     case "A":
