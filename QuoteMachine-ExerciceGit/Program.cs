@@ -5,7 +5,8 @@ Console.WriteLine("Ce projet est collaboratif et utilise le GitHub Flow.");
 Console.WriteLine("Développez une application console pour gérer et afficher des citations inspirantes.\n");
 Console.WriteLine("Prochaines étapes : implémentez les fonctionnalités dans des branches distinctes.\n");
 Console.WriteLine("\n=== Menu Principal ===");
-Console.WriteLine("Implémentez le menu du programme dans feature/menu");
+Console.WriteLine("Ajouter une nouvelle quote (A)   Quote random (R)   sauvegarder les quotes (S)   Charger citations (C)");
+
 Console.ReadKey(true);
 var manager = new QuoteManager();
 string path = "citations.csv";
